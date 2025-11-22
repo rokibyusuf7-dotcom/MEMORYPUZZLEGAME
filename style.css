@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #000;
+  --card: #444;
+}
+
+.dark {
+  --bg: #000;
+  --text: #fff;
+  --card: #222;
+}
+
+.neon {
+  --bg: #000000;
+  --text: #39FF14;
+  --card: #0A0A0A;
+}
+
+.galaxy {
+  --bg: #1A0033;
+  --text: #C9A0FF;
+  --card: #3A0066;
+}
+
+.pixel {
+  --bg: #E0F8D0;
+  --text: #203040;
+  --card: #80C0A0;
+}
+
+.candy {
+  --bg: #FFE6F7;
+  --text: #FF2DAA;
+  --card: #FF7EDB;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card {
+  width: 70px;
+  height: 70px;
+  margin: 5px;
+  background-color: var(--card);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+#settingsPopup, #winOverlay, #leaderboardPopup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#rewardBanner {
+  display: none;
+  background: gold;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+}

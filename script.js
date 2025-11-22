@@ -1,0 +1,1 @@
+// JavaScript content trimmed for zip generation test
